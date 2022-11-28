@@ -1,0 +1,507 @@
+<!DOCTYPE html class=".container-fluid">
+<html lang="en" style="height:3950px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanny's Portfolio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+        var test = 100;
+    </script>
+</head>
+
+<style>
+    :root {
+        --element-bgMax : 1.0 ;
+        --element-bgMin : 0.3 ;
+    }
+    
+
+    #container{
+        
+        height:100%;
+        border:1px solid black;
+        margin:0 auto;
+        min-width:500px;
+
+    }
+
+    #container_bg{
+
+        background-color : rgb(80, 80, 80);
+        min-width:500px;
+
+    }
+
+    .rowArr{
+        
+        height:1px;
+        display:flex;
+
+    }
+
+    .rowInnerDiv{
+
+        width:1px;
+        height:1px;
+        
+
+    }
+
+    .bg_gradient {
+
+        background-image: linear-gradient(to bottom right, rgba( 230 , 128 , 163 , var(--element-bgMax) ), rgba( 220 , 145 , 130, var(--element-bgMin) ) );
+        height: 200px;
+        
+    }
+
+
+    #contentsContainer{
+
+        
+
+    }
+
+    .imgBox{
+        width:100%; height:530; margin-bottom:20px;
+    }
+    .explainBox{
+        width:100%; height:200; border-top:4px solid #edacb1;
+    }
+
+    #imgTxtContBox1{
+        width:450; height:750; margin: 0 auto; min-width:350; border: 4px solid #edacb1;
+    }
+    #imgTxtContBox2{
+        width:450; height:750; margin: 0 auto; min-width:350; border: 4px solid #edacb1;
+    }
+
+    
+    #mySelfie{
+
+        border-radius:20px;
+        border:10px solid rgba(230 , 128 , 163 ,var(--element-bgMax));
+        width:325px;
+        
+
+    }
+
+    #mySelfIntroduce{
+
+        border-radius:20px;
+        border:10px solid rgba(230 , 128 , 163,var(--element-bgMax));
+
+    }
+
+    #eachRowDiv{
+
+        border:5px solid rgba(220 , 145 , 130,0.2);
+        border-radius:100px;
+        /* height:1450px; */
+        height: auto;
+
+    }
+    #cols{
+        border-radius:1%;
+    }
+
+    #header{
+        margin-bottom:5%;
+    }
+
+    #capstoneImgSize{
+
+        width:100%;
+        height:100%;
+
+    }
+    #gukminImgSize{
+
+        width:100%;
+        height:104%;
+        
+    }
+
+    #eveImgSize{
+
+        width:100%;
+        height:104%;
+
+    }
+
+    #kampImgSize{
+        width:100%;
+        height:100%;
+    }
+
+    #groomTonImgSize{
+        width:100%;
+        height:104%;
+
+    }
+
+    #handsomeHackImgSize{
+
+        width:100%;
+        height:100%;
+
+    }
+
+    #trawlingImgSize{
+
+        width:100%;
+        height:104%;
+
+    }
+
+    #workProfile{
+        display:inline-block;
+        margin:5%;
+        
+    }
+
+    a{
+        margin:0px;
+        padding:0px;
+    }
+    a:link {
+        color: black ;
+        text-decoration : none;
+    }
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black; text-decoration: underline ;
+    }
+
+
+    .intro{
+        margin:0px;
+        padding:0px;
+    }
+    p{
+        font-size:13px;
+    }
+    a{
+        font-size:13px;
+    }
+    #selfieSize{
+
+        width:100%;
+        
+        height:100%;
+        
+    }
+    .links {
+
+        margin-left:3%;
+
+    }
+
+    .experience{
+
+        font-size:11px;
+
+    }
+
+    
+
+</style>
+
+<body>
+    
+    <div id="container" >
+
+        <div id="container_bg" class="bg_gradient">
+
+            <div id="header" class="container" > 
+
+                <div class="row">
+
+                    <div id="mySelfie" class="col-md-3 text-bg-light p-3 me-5"> 
+                    
+                        <img  id="selfieSize" src="/img/selfie.JPG" onmouseover="this.src='/img/selfie2.JPG'" onmouseout="this.src='/img/selfie.JPG'" style="width:100%;"/>
+                        
+                    </div>
+                    <!--mySelfie 끝-->
+                    <div id="mySelfIntroduce" class="col-md-8 text-bg-light p-3 " style="height:420;"> 
+
+                        <!-- <h5 class="intro">학력</h5><p class="intro links">한성대학교 컴퓨터공학과 2017 / 01 ~ 2022 / 06 졸업예정</p> -->
+                        <h5 class="intro">블로그 ( blog )</h5><a class="intro links" href="https://blog.naver.com/167_8">베니의 개발로그</a>
+                        <h5 class="intro">깃허브 ( GitHub )</h5><a class="intro links" href="https://github.com/vanny0421">vanny's GitHub</a>
+                        
+                        
+                        <h5 class="intro">관련 교육</h5>
+
+                        <p class="links experience">역삼 KoreaIT 학원 웹 데이터 기반 챗봇 융합서비스 개발자 양성과정 A 수료<br>( 2021 / 07 / 01 ~ 2021 / 11 / 16 )<br>
+                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring Boot, Python
+                        </p>
+
+                        <p class="links experience">역삼 KoreaIT 학원 임베디드 소프트웨어 융합 풀스택 개발자 양성과정 B 현 수강중..<br>( 2022 / 08 / 03 ~ ... )<br>
+                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring
+                        </p>
+
+                        <a class="intro links" href="http://www.koreaitacademy.com/?utm_source=naver&utm_medium=cpc&utm_campaign=official&utm_content=sa&utm_term=강남코리아아이티&n_media=27758&n_query=강남코리아아이티&n_rank=1&n_ad_group=grp-a001-01-000000018276922&n_ad=nad-a001-01-000000187563118&n_keyword_id=nkw-a001-01-000003348582846&n_keyword=강남코리아아이티&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dl9m1l3mg%7Cci%3D0Au0002dR5jxSkwxeLnK%7Ctr%3Dsa%7Chk%3Dd0c53b9a2fd57f0ea19bc4a448133b6493d00aae">역삼 KoreaIT 학원 바로가기 링크</a>
+                    </div>
+                    <!--mySelfIntroduce 끝-->
+                </div>
+                <!--row 끝-->
+            </div>
+            <!-- header class container 끝-->
+
+
+            <div id="albumContainer" class="album">
+                <div id="contentsContainer" class="container">
+
+                    <div id="eachRowDiv" class="row row-cols-1  row-cols-md-1 row-cols-lg-2 mb-1">
+
+                        <div id="cols" >
+                            
+                            <div id="imgTxtContBox1" class="card shadow-sm mt-5 mb-5">
+
+                                <div class="imgBox" onclick="goCodingPocket()">
+
+                                    <img id="trawlingImgSize" src="/img/cp.png"/>
+
+                                </div>
+
+                                <div class="explainBox">
+                                    <div id="workProfile">
+                                        <p style="font-size:20px; margin:0px; padding:0px;">아이들에게 초점을 맞춘 인테리어 플랫폼</p>
+                                        <p style="font-size:20px; margin-top:10px; margin-bottom:0px; padding:0px;">팀인원 : 6인</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">기간 : 2021 / 09 / 08 ~ 2021 / 10 / 04</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">Korea IT JSP 팀 프로젝트</p>
+                                    </div>
+                                <!-- workProfile 끝 -->
+                                </div>
+                                <!-- explainBox 끝 -->
+                            </div>
+                            <!--imgTxtContBox1 끝-->
+
+                            <div id="imgTxtContBox2" class="card shadow-sm mb-5">
+
+                                <div class="imgBox" onclick="goTrawling()">
+
+                                    <img id="trawlingImgSize" src="/img/trawling.png"/>
+
+                                </div>
+
+                                <div class="explainBox">
+                                    <div id="workProfile">
+                                        <p style="font-size:20px; margin:0px; padding:0px;">웹상 연령별 댓글데이터 수집 / 분류 / 분석 / 시각화</p>
+                                        <p style="font-size:20px; margin-top:10px; margin-bottom:0px; padding:0px;">팀인원 : 6인</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">기간 : 2022 / 10 / 26 ~ 2022 / 11 / 18</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">Korea IT JSP 준수료 팀 프로젝트</p>
+                                    </div>
+                                <!-- workProfile 끝 -->
+                                </div>
+                                <!-- explainBox 끝 -->
+
+                            </div>
+                            <!--imgTxtContBox2 끝-->
+                            
+                        </div>
+                        <!-- cols 끝  -->
+
+
+
+
+                        <div id="cols" >
+                            
+                            <div id="imgTxtContBox1" class="card shadow-sm mt-5 mb-5">
+
+                                <div class="imgBox" onclick="goToQueU()">
+
+                                    <img id="trawlingImgSize" src="/img/QueU.png"/>
+
+                                </div>
+
+                                <div class="explainBox">
+                                    <div id="workProfile">
+                                        <p style="font-size:20px; margin:0px; padding:0px;">의료서비스 플랫폼</p>
+                                        <p style="font-size:20px; margin-top:10px; margin-bottom:0px; padding:0px;">팀인원 : 6인</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">기간 : 2021 / 10 / 05 ~ 2021 / 11 / 08</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">Korea IT Spring Boot 팀 프로젝트</p>
+                                    </div>
+                                <!-- workProfile 끝 -->
+                                </div>
+                                <!-- explainBox 끝 -->
+                            </div>
+                            <!--imgTxtContBox1 끝-->
+                            
+                            <!--나중에 imgTxtContBox2 만들어야함-->
+                            
+                        </div>
+                        <!-- cols 끝  -->
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <!--eachRowDiv class row 끝-->
+                    
+                    
+                    <!--
+                    <div class="row" >
+
+
+                        
+                    </div>
+                    class row 끝-->
+
+                    
+                </div>
+                <!-- contentsContainer class container 끝 -->
+
+            </div>
+            <!-- albumContainer album py-5 bg-light 끝 -->
+        </div>
+        <!-- container_bg 끝 -->
+
+    </div>
+    <!-- container div 끝 -->
+
+</body>
+
+<script>
+    /*
+    * 색상
+    * 보라색 : 139, 0, 255, 1.0
+    * 검회색 : 80 , 80 , 80 , 1.0
+    */
+    /*
+    * 화면전체를 큰 배열들로 나눌것이다
+    * bgArr[ WIDTH ][ HEIGHT ] 가 될것이고 , 후에 이 배열들의 index가 주기적으로 바뀌며 ,
+    * 웹페이지의 배경에 파도 효과를 줄것이다
+    */
+    var WIDTH , HEIGHT ;
+    var container , container_bg ;
+    var rowArr , rowInnerDiv ;
+    var bg_paintTm = 200;
+    /*
+    * cnt의 경우엔 bgMin과 bgMax가 0.3~1.0 을 왔다갔다 할때 bgChangeFlag를 cnt번째마다 검사해주기 위해서 만든 변수
+    */
+    var bg_gradient , bgMin = 0.3 , bgMax = 1.0 , cnt = 0 ;
+    
+    /*
+    * bgChangeFlag 가 false라면 1.0이 아직 안찍힌것으로 올라가고
+    * bgChangeFlag 가 true라면 1.0이 찍히고 내려가는걸로
+    */
+    var bgChangeFlag = false ;
+    /*
+    * html문서가 웹에 전부 로드되었을때 , 그떄부터 시작해서 최상단 부모div의 넓이와 높이를 가져와서
+    * 그 내부에 position을 absolute로 준 div ( container_bg ) 의 넓이와 높이를 그대로 주는 코드
+    */
+    
+    const paintBg = ()=>{
+                
+                container_bg.style.width = container.offsetWidth ;
+                container_bg.style.height = container.offsetHeight ;
+                WIDTH = container.offsetWidth ;
+                HEIGHT = container.offsetHeight ;
+
+                bg_gradient = document.querySelector('.bg_gradient') ;
+                
+                
+                if ( cnt++ % 7 == 0 ) {
+
+                    bgChangeFlag = ( bgMin >= 1.0 && bgMax <= 0.3 ) ? true : false ;
+                
+                }
+
+
+                if ( bgChangeFlag ) {
+
+                    bgMax = ( Number(bgMax) + 0.1 ).toFixed(1) ;
+                    bgMin = ( Number(bgMin) - 0.1 ).toFixed(1) ;
+
+                    bg_gradient.style.setProperty('--element-bgMax' , bgMax ) ;
+                    bg_gradient.style.setProperty('--element-bgMin' , bgMin ) ;
+
+                } else {
+                    
+                    bgMax = ( Number(bgMax) - 0.1 ).toFixed(1) ;
+                    bgMin = ( Number(bgMin) + 0.1 ).toFixed(1) ;
+
+                    bg_gradient.style.setProperty('--element-bgMax' , bgMax ) ;
+                    bg_gradient.style.setProperty('--element-bgMin' , bgMin ) ;
+
+                }
+
+                console.log(` bgMax : ${bgMax}\nbgMin : ${bgMin} `) ;
+                
+                
+            };
+
+    document.addEventListener("DOMContentLoaded", function(event){
+
+        container = document.getElementById("container") ;
+        container_bg = document.getElementById("container_bg") ;
+
+        paintBg() ;
+
+        setInterval(()=>{
+
+            paintBg() ;
+            
+        },bg_paintTm);
+
+
+
+
+        /*
+        * rgba 값을 각 픽셀에 넣어주려면 4칸짜리 배열이 하나 있어야한다
+        * 즉 bgArr[ WIDTH ][ HEIGHT ][ 4 ] 가 되고
+        * 이후에는 잘게 나눠진 div에 rgba( bgArr[ WIDTH ][ HEIGHT ][ 0 ] , bgArr[ WIDTH ][ HEIGHT ][ 1 ] , bgArr[ WIDTH ][ HEIGHT ][ 2 ] , bgArr[ WIDTH ][ HEIGHT ][ 3 ] ) ;
+        * 으로 각 index 즉 픽셀마다 rgba가 정해질것이다
+        * 
+        * 오른쪽으로 갈수록 어두워지게 만들것이다
+        */
+        
+        /*
+        * 각 인덱스마다 div를 만드는 코드
+        * rowArr : width 100% 인 가로 div
+        * rowInnerDiv : rowArr내부의 가로로 줄지어있는 작은 div ( 이후 내부 background을 rgba로 줄것 )
+        */
+        
+
+        
+        
+    });
+    
+
+
+</script>
+
+<script>
+    //페이징 함수들
+    //이미지 누르면 넘어가게
+    function goCodingPocket(){
+        location.href="goCodingPocket";
+    }
+    function goToQueU(){
+        location.href="goToQueU";
+    }
+    function goTrawling(){
+        location.href="goTrawling";
+    }
+    function goGroomTon(){
+        location.href="goGroomTon";
+    }
+</script>
+
+</html>
