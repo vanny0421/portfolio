@@ -206,7 +206,7 @@
 
     .experience{
 
-        font-size:11px;
+        font-size:13px;
 
     }
 
@@ -240,14 +240,15 @@
                         <h5 class="intro">관련 교육</h5>
 
                         <p class="links experience">역삼 KoreaIT 학원 웹 데이터 기반 챗봇 융합서비스 개발자 양성과정 A 수료<br>( 2021 / 07 / 01 ~ 2021 / 11 / 16 )<br>
-                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring Boot, Python
+                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring Boot, thymeleaf, Python
                         </p>
 
-                        <p class="links experience">역삼 KoreaIT 학원 임베디드 소프트웨어 융합 풀스택 개발자 양성과정 B 현 수강중..<br>( 2022 / 08 / 03 ~ ... )<br>
-                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring
+                        
+
+                        <p class="links experience">역삼 KoreaIT 학원 임베디드 소프트웨어 융합 풀스택 개발자 양성과정 B 현 수강중..<br>( 2022 / 08 / 03 ~ 2022 / 12 / 28 )<br>
+                            Java, HTML, CSS, JavaScript, Jsp, Oracle, MyBatis, Spring Boot, jQuery, JPA, QueryDSL, thymeleaf
                         </p>
 
-                        <a class="intro links" href="http://www.koreaitacademy.com/?utm_source=naver&utm_medium=cpc&utm_campaign=official&utm_content=sa&utm_term=강남코리아아이티&n_media=27758&n_query=강남코리아아이티&n_rank=1&n_ad_group=grp-a001-01-000000018276922&n_ad=nad-a001-01-000000187563118&n_keyword_id=nkw-a001-01-000003348582846&n_keyword=강남코리아아이티&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dl9m1l3mg%7Cci%3D0Au0002dR5jxSkwxeLnK%7Ctr%3Dsa%7Chk%3Dd0c53b9a2fd57f0ea19bc4a448133b6493d00aae">역삼 KoreaIT 학원 바로가기 링크</a>
                     </div>
                     <!--mySelfIntroduce 끝-->
                 </div>
@@ -335,7 +336,27 @@
                             </div>
                             <!--imgTxtContBox1 끝-->
                             
-                            <!--나중에 imgTxtContBox2 만들어야함-->
+                            <div id="imgTxtContBox2" class="card shadow-sm mb-5">
+
+                                <div class="imgBox" onclick="goLetterOfHeart()">
+
+                                    <img id="trawlingImgSize" src="/img/letterOfHeart.png"/>
+
+                                </div>
+
+                                <div class="explainBox">
+                                    <div id="workProfile">
+                                        <p style="font-size:20px; margin:0px; padding:0px;">크리스마스 🎄 / 설날 / 추석 / 스승의날 등등 특별한 날에 마음을 전하는 편지 💌</p>
+                                        <p style="font-size:20px; margin-top:10px; margin-bottom:0px; padding:0px;">팀인원 : 6인</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">기간 : 2022 / 12 / 09 ~ 2022 / 12 / 27</p>
+                                        <p style="font-size:20px; margin:0px; padding:0px;">Korea IT Spring Boot 팀 프로젝트</p>
+                                    </div>
+                                <!-- workProfile 끝 -->
+                                </div>
+                                <!-- explainBox 끝 -->
+
+                            </div>
+                            <!--imgTxtContBox2 끝-->
                             
                         </div>
                         <!-- cols 끝  -->
@@ -498,6 +519,9 @@
     }
     function goTrawling(){
         location.href="goTrawling";
+    }
+    function goLetterOfHeart(){
+        location.href="goLetterOfHeart"
     }
     function goGroomTon(){
         location.href="goGroomTon";

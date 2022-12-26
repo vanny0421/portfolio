@@ -13,6 +13,9 @@ module.exports = (router) => {
   router.route("/goTrawling").get((req, res) => {
     res.render("Trawling");
   });
+  router.route("/goLetterOfHeart").get((req, res) => {
+    res.render("letterOfHeart");
+  });
   router.route("/goGroomTon").get((req, res) => {
     res.render("goGroomTon");
   });
